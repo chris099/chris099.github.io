@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kangjoon Cho | Geospatial & Quantitative Environmental Modeler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* 기본 스타일 */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f7f7f7;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.4rem;
+    }
+
+    header p.tagline {
+      margin: 0.3rem 0;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    .btn-row {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 500;
+      background: rgba(148, 163, 184, 0.25);
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-primary {
+      background: #f97316;
+      border-color: #fb923c;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      background-color: #f7f7f7;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.4rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .pill {
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: #eef2ff;
+      font-size: 0.8rem;
+      color: #4f46e5;
+    }
+
+    .project {
+      margin-bottom: 1.3rem;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    .muted {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.2rem 0 0.6rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #9ca3af;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 2.4rem 1.2rem;
+      }
+      header h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kangjoon Cho</h1>
+    <p class="tagline">Geospatial & Quantitative Environmental Modeler</p>
+    <p class="tagline">Remote sensing • Time-series analysis • Carbon & energy systems</p>
+    <div class="btn-row">
+      <!-- 나중에 CV PDF 올리면 링크만 수정하면 됨 -->
+      <a class="btn btn-primary" href="#" target="_blank">Download CV (PDF)</a>
+      <a class="btn" href="#projects">View Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a PhD candidate in Earth & Environment at Boston University. My work focuses on detecting land-use and land-cover change from satellite imagery, 
+        quantifying the carbon implications of utility-scale solar development in temperate forests, and building reproducible quantitative workflows for environmental decision-making.
+      </p>
+      <p>
+        I am especially interested in how remote sensing, time-series analysis, and carbon modeling can be combined to support the clean energy transition while minimizing land-use impacts.
+      </p>
+      <div class="pill-list">
+        <span class="pill">Remote sensing</span>
+        <span class="pill">Google Earth Engine</span>
+        <span class="pill">Time-series analysis</span>
+        <span class="pill">Land-use & land-cover change</span>
+        <span class="pill">Carbon bookkeeping</span>
+        <span class="pill">Life-cycle assessment</span>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research & Publications</h2>
+      <p class="muted">Selected work (more to come).</p>
+      <ul>
+        <li>
+          <strong>Detecting utility-scale solar installations and associated land cover changes using spatiotemporal segmentation of Landsat imagery</strong><br />
+          <span class="muted">Science of Remote Sensing, 2025. (with Curtis E. Woodcock, et al.)</span>
+        </li>
+        <!-- 여기에 향후 논문/보고서 추가 -->
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Mapping Utility-Scale Solar and Forest Loss in Massachusetts (2005–2024)</div>
+        <div class="muted">Remote sensing · Google Earth Engine · Object-based change detection</div>
+        <ul>
+          <li>Detected utility-scale solar farms and associated deforestation using CCDC time-series modeling and SNIC segmentation on Landsat imagery.</li>
+          <li>Distinguished between solar built with and without forest clearing, and non-solar land-cover change.</li>
+          <li>Implemented the full workflow in Google Earth Engine with post-processing and accuracy assessment in R.</li>
+        </ul>
+        <!-- 여기에 GitHub 링크 생기면 넣기 -->
+        <!-- <a href="https://github.com/..." target="_blank">Code on GitHub</a> -->
+      </div>
+
+      <div class="project">
+        <div class="project-title">Carbon Emissions from Forest Conversion for Solar Energy</div>
+        <div class="muted">Carbon bookkeeping · Monte Carlo · R</div>
+        <ul>
+          <li>Developed a bookkeeping model to estimate CO₂ emissions from forest clearing associated with utility-scale solar projects.</li>
+          <li>Incorporated biomass variability, decay pathways, and uncertainty from both area estimates and carbon stocks.</li>
+          <li>Implemented Monte Carlo simulations in R to provide confidence intervals for annual and cumulative emissions.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Remote Sensing Change Detection Toolkit</div>
+        <div class="muted">Reproducible workflows · GEE · R/Python</div>
+        <ul>
+          <li>Building a small collection of reusable scripts for time-series change detection, object-based classification, and accuracy assessment.</li>
+          <li>Designed to support rapid prototyping of land-use change analyses for energy and land-use planning questions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Technical</h3>
+      <ul>
+        <li><strong>Programming & data:</strong> Python (NumPy, pandas, scikit-learn, basic PyTorch), R (tidyverse, rFIA, stats), SQL, Git, Linux.</li>
+        <li><strong>Geospatial & remote sensing:</strong> Google Earth Engine (JS & Python APIs), Landsat, Sentinel-2, NAIP, DEMs, time-series modeling (CCDC), object-based image analysis.</li>
+        <li><strong>Modeling & analysis:</strong> time-series models, regression, random forest, carbon bookkeeping, basic LCA, uncertainty analysis (Monte Carlo, bootstrapping).</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>CV & Contact</h2>
+      <p>
+        CV, code, and additional materials are being updated as I prepare for the next step after my PhD.
+        If you are interested in geospatial analytics, energy transition, or data-driven environmental decision-making, feel free to reach out.
+      </p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li><strong>Google Scholar:</strong> <a href="#" target="_blank">Scholar profile (link)</a></li>
+        <li><strong>LinkedIn:</strong> <a href="#" target="_blank">LinkedIn profile (link)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Kangjoon Cho. All rights reserved.
+  </footer>
+
+  <script>
+    // 자동으로 올해 연도 찍어주는 스크립트
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
