@@ -26,6 +26,37 @@
       text-align: center;
     }
 
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .profile-img img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+    
+    .header-text {
+      text-align: left;
+    }
+    
+    @media (max-width: 640px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .header-text {
+        text-align: center;
+      }
+    }
+
     header h1 {
       margin: 0 0 0.5rem;
       font-size: 2.4rem;
@@ -141,13 +172,25 @@
 </head>
 <body>
   <header>
-    <h1>Kangjoon Cho</h1>
-    <p class="tagline">Geospatial & Quantitative Environmental Modeler</p>
-    <p class="tagline">Remote sensing • Time-series analysis • Carbon & energy systems</p>
-    <div class="btn-row">
-      <!-- 나중에 CV PDF 올리면 링크만 수정하면 됨 -->
-      <a class="btn btn-primary" href="CV_Kangjoon_Cho_Feb26.pdf" target="_blank">Download CV (PDF)</a>
-      <a class="btn" href="#projects">View Projects</a>
+    <div class="header-content">
+      
+      <div class="profile-img">
+        <img src="profile.jpg" alt="Kangjoon Cho">
+      </div>
+  
+      <div class="header-text">
+        <h1>Kangjoon Cho</h1>
+        <p class="tagline">Geospatial & Quantitative Environmental Modeler</p>
+        <p class="tagline">Remote sensing • Time-series analysis • Carbon & energy systems</p>
+  
+        <div class="btn-row">
+          <a class="btn btn-primary" href="assets/CV_Kangjoon_Cho.pdf" target="_blank">
+            Download CV (PDF)
+          </a>
+          <a class="btn" href="#projects">View Projects</a>
+        </div>
+      </div>
+  
     </div>
   </header>
 
